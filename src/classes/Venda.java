@@ -118,6 +118,7 @@ public class Venda {
     }
     
     public double freteRegiao(String regiao,String tipoRegiao) {
+    	/**
     	var fretes = new HashMap<>() {{	
             put("Distrito Federal", new double[] {5.00, 0.00}); 
             put("Regiao Centro-oeste", new double[] {10.00, 13.00});
@@ -126,8 +127,11 @@ public class Venda {
             put("Regiao Sudeste", new double[] {7.00, 10.00});
             put("Regiao Sul", new double[] {10.00, 13.00});
         }};
-        
-        return (double) fretes.get((tipoRegiao == "interior") ? 0 : 1);    
+        System.out.println("Custo de envio para a capital do Distrito Federal: " + fretes.get(regiao)[1]);
+
+        return fretes.get("Distrito Federal")[0	];    
+        **/
+    	return 0.00;
     }
     
 }
