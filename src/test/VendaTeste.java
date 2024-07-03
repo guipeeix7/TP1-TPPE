@@ -62,7 +62,7 @@ public class VendaTeste {
 
     @Test
     public void valorFinalTest() {
-        assertEquals(this.valorFinal, venda.getValorFinal());
+        assertEquals(this.subTotal, venda.getValorFinal());
     }
 
 }
